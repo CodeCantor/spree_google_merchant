@@ -18,6 +18,16 @@ xml.rss "version" => "2.0", "xmlns:g" => "http://base.google.com/ns/1.0" do
         xml.tag! "g:id", product.id.to_s
         xml.tag! "g:price", product.price
         xml.tag! "g:condition", "new"
+        xml.tag! "g:availability", "in stock"
+        if product.property('Brand')
+          xml.tag! "g:brand", product.property('Brand') 
+        end
+        if product.property('Google Product Category')
+          xml.tag! "g:google_product_category", product.property('Google Product Category')
+        end
+        if product.property('Google Product Type')
+          xml.tag! "g:product_type", product.property('Google Product type')
+        end
         xml.tag! "g:image_link", production_domain.sub(/\/$/, '') + product.images.first.attachment.url(:product) unless product.images.empty?
       end
     end
