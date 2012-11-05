@@ -26,7 +26,7 @@ xml.rss "version" => "2.0", "xmlns:g" => "http://base.google.com/ns/1.0" do
           xml.tag! "g:google_product_category", product.property('Google Product Category')
         end
         if product.property('Google Product Type')
-          xml.tag! "g:product_type", product.property('Google Product type')
+          xml.tag! "g:product_type", product.property('Google Product Type')
         end
         xml.tag! "g:image_link", production_domain.sub(/\/$/, '') + product.images.first.attachment.url(:product) unless product.images.empty?
       end
