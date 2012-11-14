@@ -25,8 +25,8 @@ xml.rss "version" => "2.0", "xmlns:g" => "http://base.google.com/ns/1.0" do
         if product.property('Google Product Category')
           xml.tag! "g:google_product_category", product.property('Google Product Category')
         end
-        if product.property('Google Product Type')
-          xml.tag! "g:product_type", product.property('Google Product Type')
+        if Spree::Taxonomy.respond_to?(:menu) && Spree::Taxonomy.menu 
+          xml.tag! "g:product_type", product.product_type
         end
         xml.tag! "g:image_link", production_domain.sub(/\/$/, '') + product.images.first.attachment.url(:product) unless product.images.empty?
       end
