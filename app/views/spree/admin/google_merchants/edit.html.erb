@@ -15,6 +15,10 @@
     <label><%= t('production_domain') %></label>
     <%= text_field_tag('preferences[production_domain]', Spree::GoogleMerchant::Config[:production_domain])%>
   </p>
+    <p>
+    <label><%= t('default category') %></label>
+    <%= text_field_tag('preferences[default_category]', Spree::GoogleMerchant::Config[:default_category])%>
+  </p>
 
 
   <p class="form-buttons">
