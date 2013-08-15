@@ -15,9 +15,13 @@
     <label><%= t('production_domain') %></label>
     <%= text_field_tag('preferences[production_domain]', Spree::GoogleMerchant::Config[:production_domain])%>
   </p>
-    <p>
+  <p>
     <label><%= t('default category') %></label>
     <%= text_field_tag('preferences[default_category]', Spree::GoogleMerchant::Config[:default_category])%>
+  </p>
+  <p>
+    <label><%= t('google_merchant_taxonomy') %></label>
+    <%= select_tag('preferences[category_taxonomy_id]', options_from_collection_for_select(Spree::Taxonomy.all, "id", "name", Spree::GoogleMerchant::Config[:category_taxonomy_id]), :include_blank => true) %>
   </p>
 
 

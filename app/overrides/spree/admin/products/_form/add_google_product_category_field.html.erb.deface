@@ -1,0 +1,8 @@
+<!-- insert_bottom "[data-hook='admin_product_form_left']" -->
+
+<%= f.field_container :google_product_category do %>
+  <%= f.label :google_product_category, t(:google_product_category) %>
+  <%= f.text_field :google_product_category, :class => 'fullwidth title' %>
+  <%= f.error_message_on :google_product_category %>
+<% end %>
+<div class="clear"></div>

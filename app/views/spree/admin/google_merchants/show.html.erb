@@ -19,6 +19,10 @@
     <th scope="row"><%= t("default_category") %>:</th>
     <td><%= Spree::GoogleMerchant::Config[:default_category] %></td>
   </tr>
+  <tr>
+    <th scope="row"><%= t("google_merchant_taxonomy") %>:</th>
+    <td><%= Spree::Taxonomy.find(Spree::GoogleMerchant::Config[:category_taxonomy_id]).name %></td>
+  </tr>
 </table>
 
 <p><%= link_to_with_icon 'edit', t("edit"), edit_admin_google_merchants_path, :id => 'admin_google_merchants_link' %></p>
