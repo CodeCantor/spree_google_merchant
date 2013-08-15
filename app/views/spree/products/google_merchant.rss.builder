@@ -29,7 +29,7 @@ xml.rss "version" => "2.0", "xmlns:g" => "http://base.google.com/ns/1.0" do
         elsif !Spree::GoogleMerchant::Config[:default_category].blank?
           xml.tag! "g:google_product_category", Spree::GoogleMerchant::Config[:default_category]
         end
-        if Spree::Taxonomy.exists?(Spree::GoogleMerchant::Config[:category_taxonomy_id])
+        if Spree::GoogleMerchant::Config[:category_taxonomy_id] && Spree::Taxonomy.exists?(Spree::GoogleMerchant::Config[:category_taxonomy_id])
           xml.tag! "g:product_type", product.product_type
         end
         xml.tag! "g:image_link", product.images.first.attachment.url(:product) unless product.images.empty?

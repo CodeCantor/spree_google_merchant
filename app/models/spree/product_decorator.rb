@@ -2,7 +2,7 @@ Spree::Product.class_eval do
   attr_accessible :google_product_category
 
   def product_type
-    return "" unless Spree::Taxonomy.exists?(Spree::GoogleMerchant::Config[:category_taxonomy_id])
+    return "" unless Spree::GoogleMerchant::Config[:category_taxonomy_id] && Spree::Taxonomy.exists?(Spree::GoogleMerchant::Config[:category_taxonomy_id])
     categories = Spree::Taxonomy.find(Spree::GoogleMerchant::Config[:category_taxonomy_id])
 
     taxon = taxons.where(taxonomy_id: categories.id).first

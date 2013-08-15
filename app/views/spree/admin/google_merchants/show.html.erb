@@ -21,7 +21,7 @@
   </tr>
   <tr>
     <th scope="row"><%= t("google_merchant_taxonomy") %>:</th>
-    <td><%= Spree::Taxonomy.find(Spree::GoogleMerchant::Config[:category_taxonomy_id]).name %></td>
+    <td><%= Spree::GoogleMerchant::Config[:category_taxonomy_id] ? Spree::Taxonomy.find(Spree::GoogleMerchant::Config[:category_taxonomy_id]).name : "N/A" %></td>
   </tr>
 </table>
 
