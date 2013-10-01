@@ -45,7 +45,7 @@ xml.rss "version" => "2.0", "xmlns:g" => "http://base.google.com/ns/1.0" do
           xml.tag! "g:product_type", product.product_type
         end
         
-        xml.tag! "g:image_link", product.images.first.attachment.url(:product) unless product.images.empty?
+        xml.tag! "g:image_link", production_domain + product.images.first.attachment.url(:product) unless product.images.empty?
       end
     end
   end
