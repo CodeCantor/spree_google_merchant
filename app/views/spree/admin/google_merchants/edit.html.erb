@@ -16,7 +16,7 @@
     <%= text_field_tag('preferences[production_domain]', Spree::GoogleMerchant::Config[:production_domain])%>
   </p>
   <p>
-    <label><%= t('default category') %></label>
+    <label><%= t('default_category') %></label> ( <%= link_to t(:list), "http://www.google.com/basepages/producttype/taxonomy.pt-BR.txt", :target => "_blank" %> )
     <%= text_field_tag('preferences[default_category]', Spree::GoogleMerchant::Config[:default_category])%>
   </p>
   <p>

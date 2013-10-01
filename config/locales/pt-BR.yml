@@ -1,0 +1,11 @@
+---
+pt-BR:
+  edit_google_merchant_settings: "Editar as configurações do Google Merchant"
+  google_merchant_title: "Título do Google Merchant"
+  google_merchant_description: "Descrição do Google Merchant"
+  production_domain: "Domínio / Url"
+  google_merchant: "Google Merchant"
+  google_merchants_description: "Fornece uma transmissão ao vivo de produtos ativos para o Google Merchant" #Not to be confused with the above
+  google_merchant_taxonomy: "Taxonomia utilizada para gerar os tipos de produtos do Google"
+  default_category: "Categoria Padrão do Google Merchant"
+  google_product_category: "Categoria do Google Merchant"

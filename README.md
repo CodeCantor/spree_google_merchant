@@ -15,6 +15,8 @@ To start with you'll need a Google Merchant account. Then:
     gem "spree_google_merchant", :git => 'git://github.com/nebulab/spree_google_merchant.git'
     
     bundle install
+	
+	rails g spree_google_merchant:install
 
     
 To configure the feed title, description and site URL go to the Google Merchant settings page in Admin -> Configuration
