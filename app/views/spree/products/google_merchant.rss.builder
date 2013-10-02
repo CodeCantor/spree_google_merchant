@@ -46,7 +46,7 @@ xml.rss "version" => "2.0", "xmlns:g" => "http://base.google.com/ns/1.0" do
         end
         
         # subdivision - Parcelamento
-        unless Spree::GoogleMerchant::Config[:number_of_plots].blank?
+        if Spree::GoogleMerchant::Config[:number_of_plots] && Spree::GoogleMerchant::Config[:number_of_plots] > 0
           xml.tag! "g:installment" do
             xml.tag! "g:months", Spree::GoogleMerchant::Config[:number_of_plots]
             xml.tag! "g:amount", number_to_currency( product.price / Spree::GoogleMerchant::Config[:number_of_plots])
