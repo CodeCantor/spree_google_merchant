@@ -23,7 +23,10 @@
     <label><%= t('google_merchant_taxonomy') %></label>
     <%= select_tag('preferences[category_taxonomy_id]', options_from_collection_for_select(Spree::Taxonomy.all, "id", "name", Spree::GoogleMerchant::Config[:category_taxonomy_id]), :include_blank => true) %>
   </p>
-
+  <p>
+    <label><%= t('number_of_plots') %></label>
+    <%= text_field_tag('preferences[number_of_plots]', Spree::GoogleMerchant::Config[:number_of_plots])%>
+  </p>
 
   <p class="form-buttons">
     <%= button t('update') %>

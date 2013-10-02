@@ -2,7 +2,7 @@
   Gem::Specification.new do |s|
     s.platform    = Gem::Platform::RUBY
     s.name        = 'spree_google_merchant'
-    s.version     = '0.0.2'
+    s.version     = '0.0.3'
     s.summary     = 'A Spree Commerce Theme for www.lilyandmax.co.uk based on spree_blue_theme'
     s.homepage    = 'https://github.com/samtreweek/lilyandmax_theme'
 

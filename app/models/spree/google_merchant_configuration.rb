@@ -4,4 +4,5 @@ class Spree::GoogleMerchantConfiguration < Spree::Preferences::Configuration
   preference :production_domain, :string, :default => 'http://www.myspreeshop.com/'
   preference :default_category, :string, :default => ''
   preference :category_taxonomy_id, :integer, :default => nil
+  preference :number_of_plots, :integer, :default => nil
 end

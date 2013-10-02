@@ -23,6 +23,10 @@
     <th scope="row"><%= t("google_merchant_taxonomy") %>:</th>
     <td><%= Spree::GoogleMerchant::Config[:category_taxonomy_id] ? Spree::Taxonomy.find(Spree::GoogleMerchant::Config[:category_taxonomy_id]).name : "N/A" %></td>
   </tr>
+  <tr>
+    <th scope="row"><%= t("number_of_plots") %>:</th>
+    <td><%= Spree::GoogleMerchant::Config[:number_of_plots] %></td>
+  </tr>
 </table>
 
 <p><%= link_to_with_icon 'edit', t("edit"), edit_admin_google_merchants_path, :id => 'admin_google_merchants_link' %></p>

@@ -1,5 +1,6 @@
 ---
 pt-BR:
+  google_merchant_settings: "Configurações do Google Merchant"	
   edit_google_merchant_settings: "Editar as configurações do Google Merchant"
   google_merchant_title: "Título do Google Merchant"
   google_merchant_description: "Descrição do Google Merchant"
@@ -9,3 +10,4 @@ pt-BR:
   google_merchant_taxonomy: "Taxonomia utilizada para gerar os tipos de produtos do Google"
   default_category: "Categoria Padrão do Google Merchant"
   google_product_category: "Categoria do Google Merchant"
+  number_of_plots: "Número de parcelas"  

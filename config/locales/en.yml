@@ -1,5 +1,6 @@
 ---
 en:
+  configurações do Google Merchant: "Google Merchant settings"	
   edit_google_merchant_settings: "Edit Google Merchant settings"
   google_merchant_title: "Google Merchant title"
   google_merchant_description: "Google Merchant description"
@@ -8,3 +9,4 @@ en:
   google_merchants_description: "Provides a live feed of active products for Google Merchant" #Not to be confused with the above
   google_merchant_taxonomy: Taxonomy used to generate Google product types
   default_category: "Google Merchant default category"
+  number_of_plots: "Number of plots"
