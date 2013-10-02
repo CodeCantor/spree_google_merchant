@@ -23,8 +23,8 @@ xml.rss "version" => "2.0", "xmlns:g" => "http://base.google.com/ns/1.0" do
         xml.tag! "g:availability", "in stock"
         
         # Product Brand
-        if product.property('Brand')
-          xml.tag! "g:brand", product.property('Brand') 
+        if product.property('brand')
+          xml.tag! "g:brand", product.property('brand') 
         elsif product.property('marca')
           xml.tag! "g:brand", product.property('marca')
         elsif product.property('fornecedor')
