@@ -1,5 +1,4 @@
 Spree::Product.class_eval do
-  attr_accessible :google_product_category
 
   def product_type
     return "" unless Spree::GoogleMerchant::Config[:category_taxonomy_id] && Spree::Taxonomy.exists?(Spree::GoogleMerchant::Config[:category_taxonomy_id])
